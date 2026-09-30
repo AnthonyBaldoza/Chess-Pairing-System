@@ -1,0 +1,69 @@
+TOURNAMENT_SAVE_V2
+Date:2026-09-20T18:17:22.8684513
+Round:4
+Rounds:5
+PlayerCount:20
+PLAYERS_START
+Anthony|1876|4.0|4|0|0|4|0|8.00|8.00|1|3|Jake,Stephie,cailine,Kloude
+Jake|1838|3.0|3|1|0|4|0|10.00|6.00|2|2|Seb,aivhan,Zion,Anthony
+aivhan|1838|3.0|3|1|0|4|0|9.50|6.50|2|2|Jake,Chedrick,Zayne,Carlos
+Mary Joy|1840|3.0|2|0|2|4|0|7.00|5.25|2|2|Seb,raven,Kloude,Carlos
+cailine|1820|2.5|2|1|1|4|0|9.50|4.50|3|1|jenica,Anthony,Caleb,jenica refresa
+raven|1816|2.5|2|1|1|4|0|7.00|3.25|2|2|justine,jonas,Zion,Mary Joy
+Zayne|1818|2.5|2|1|1|4|0|7.00|3.00|2|2|Zion Matthew,jonas,aivhan,Kloude
+Carlos|1801|2.0|1|1|2|4|0|8.50|3.75|2|2|jonas,aivhan,Chedrick,Mary Joy
+jenica|1800|2.0|1|1|2|4|0|8.00|3.75|2|2|Zion Matthew,justine,cailine,jenica refresa
+Zion|1802|2.0|2|2|0|4|0|8.00|2.50|2|2|Seb,Jake,justine,raven
+jenica refresa|1796|2.0|2|2|0|4|0|7.00|3.00|2|2|jenica,Stephie,cailine,Kloude
+Chedrick|1800|2.0|2|2|0|4|0|6.50|1.50|2|2|aivhan,Stephie,Bernabe,Carlos
+Zion Matthew|1799|2.0|1|1|2|4|0|6.00|2.75|2|2|jenica,Stephie,Zayne,Bernabe
+Kloude|1782|1.5|1|2|1|4|0|11.50|3.50|2|2|Anthony,Mary Joy,Zayne,jenica refresa
+justine|1780|1.5|1|2|1|4|0|7.00|1.75|2|2|jenica,raven,Zion,Bernabe
+Caleb|1781|1.5|1|2|1|4|0|4.50|0.75|3|1|Seb,jonas,cailine,Bernabe
+Stephie|1760|1.0|1|3|0|4|0|10.00|2.00|2|2|Zion Matthew,Anthony,Chedrick,jenica refresa
+Seb|1761|1.0|1|3|0|4|0|9.50|1.50|1|3|Jake,Zion,Caleb,Mary Joy
+jonas|1741|0.5|0|3|1|4|0|8.50|1.00|2|2|raven,Caleb,Zayne,Carlos
+Bernabe|1741|0.5|0|3|1|4|0|7.00|0.75|2|2|Zion Matthew,justine,Chedrick,Caleb
+PLAYERS_END
+MATCHES_START
+Jake|Zion|1|1|1.0
+Caleb|Seb|1|2|0.0
+Kloude|Mary Joy|1|3|0.5
+Carlos|jonas|1|4|0.5
+Bernabe|Chedrick|1|5|0.0
+Zayne|aivhan|1|6|0.0
+Zion Matthew|Stephie|1|7|0.0
+cailine|Anthony|1|8|0.0
+raven|justine|1|9|0.5
+jenica|jenica refresa|1|10|0.0
+Seb|Jake|2|1|0.0
+Chedrick|aivhan|2|2|0.0
+Stephie|Anthony|2|3|0.0
+jenica refresa|Kloude|2|4|0.0
+Mary Joy|Carlos|2|5|0.5
+jonas|raven|2|6|0.0
+justine|Zion|2|7|0.0
+Caleb|Bernabe|2|8|0.5
+Zayne|Zion Matthew|2|9|0.5
+cailine|jenica|2|10|0.5
+aivhan|Jake|3|1|0.0
+Anthony|Kloude|3|2|1.0
+Zion|raven|3|3|0.0
+Mary Joy|Seb|3|4|1.0
+Carlos|Chedrick|3|5|1.0
+Stephie|jenica refresa|3|6|0.0
+jonas|Zayne|3|7|0.0
+cailine|Caleb|3|8|1.0
+Bernabe|Zion Matthew|3|9|0.0
+jenica|justine|3|10|1.0
+Jake|Anthony|4|1|0.0
+raven|Mary Joy|4|2|0.0
+aivhan|Carlos|4|3|1.0
+jenica refresa|cailine|4|4|0.0
+Kloude|Zayne|4|5|0.0
+Zion Matthew|jenica|4|6|0.5
+Zion|Seb|4|7|1.0
+Chedrick|Stephie|4|8|1.0
+Caleb|jonas|4|9|1.0
+justine|Bernabe|4|10|1.0
+MATCHES_END

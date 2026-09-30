@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CCS Pairing System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">♟ Calauan Chess Society</h1>
+    <h2 class="title">Pairing System</h2>
+    <div id="status"></div>
+  </body>
+</html>
+
+    <section id="setup-section">
+      <h2>Tournament Setup</h2>
+      <div id="new-tournament">
+        <input id="t-name" placeholder="Tournament name" />
+        <input
+          id="t-rounds"
+          type="number"
+          placeholder="Rounds (blank = auto)"
+        />
+        <button onclick="createTournament()">Create Tournament</button>
+      </div>
+      <p>
+        Or pick an existing one:
+        <select id="t-select" onchange="selectTournament()">
+          <option value="">-- select --</option>
+        </select>
+        <button class="danger-btn" onclick="deleteTournament()">
+          🗑 Delete This Tournament
+        </button>
+      </p>
+    </section>
+
+    <section id="players-section" class="hidden">
+      <h2>2. Players</h2>
+
+      <h3 class="sub-heading first">Select from past players</h3>
+      <input
+        id="roster-search"
+        placeholder="Search saved players..."
+        oninput="renderRoster()"
+      />
+      <button onclick="loadRoster()">🔄 Refresh list</button>
+      <button class="danger-btn" onclick="clearRoster()">
+        🗑 Clear Entire Roster
+      </button>
+      <div id="roster-box"><p class="roster-empty">Loading...</p></div>
+      <button onclick="addSelectedFromRoster()">
+        ➕ Add Selected Players (with updated ratings)
+      </button>
+
+      <h3 class="sub-heading">Or add a new player</h3>
+      <input id="p-name" placeholder="Player name" />
+      <input id="p-rating" type="number" placeholder="Rating" value="1200" />
+      <input id="p-age" type="number" placeholder="Age" />
+      <select id="p-gender">
+        <option value="">Gender...</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <button onclick="addPlayer()">Add Player</button>
+
+      <p><em id="player-count"></em></p>
+      <button onclick="generatePairings()" id="generate-btn">
+        Generate Next Round Pairings
+      </button>
+    </section>
+
+    <section id="pairings-section" class="hidden">
+      <h2>
+        3. Current Round Pairings
+        <span id="round-label" class="round-label"></span>
+      </h2>
+      <div id="boards"></div>
+    </section>
+
+    <section id="standings-section" class="hidden">
+      <h2>4. Standings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Score</th>
+            <th>Rating</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>W</th>
+            <th>L</th>
+            <th>D</th>
+            <th>Bye</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="standings-body"></tbody>
+      </table>
+    </section>
+
+    <section id="awards-section" class="hidden">
+      <h2>5. 🏆 Awards</h2>
+      <button onclick="refreshAwards()">🔄 Refresh Awards</button>
+      <div class="awards-box">
+        <div class="award-card">
+          <h4>🥇 Overall Champions</h4>
+          <ol class="champ-list" id="award-champions"></ol>
+        </div>
+        <div class="award-card">
+          <h4>
+            🧒 Top Kiddie
+            <span class="award-note">(12 &amp; below)</span>
+          </h4>
+          <div id="award-kiddie" class="award-empty">
+            No eligible player yet
+          </div>
+        </div>
+        <div class="award-card">
+          <h4>
+            🧑 Top Junior
+            <span class="award-note">(13–17)</span>
+          </h4>
+          <div id="award-junior" class="award-empty">
+            No eligible player yet
+          </div>
+        </div>
+        <div class="award-card">
+          <h4>👩 Top Lady</h4>
+          <div id="award-lady" class="award-empty">No eligible player yet</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

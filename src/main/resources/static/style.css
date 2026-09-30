@@ -1,0 +1,213 @@
+/* ===== Base ===== */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+  background: #b5b5b5;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+h2 {
+  color: black;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+section {
+  background: #fff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input,
+select,
+button {
+  padding: 6px 8px;
+  margin: 4px 4px 4px 0;
+}
+button {
+  background: #525252;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: #313131;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th,
+td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background: #ecf0f1;
+}
+
+/* ===== Utilities ===== */
+.hidden {
+  display: none;
+}
+#status {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== Headings inside the Players section ===== */
+.sub-heading {
+  margin: 16px 0 4px;
+}
+.sub-heading.first {
+  margin: 0 0 4px;
+}
+
+/* ===== Input widths (moved from inline styles) ===== */
+#t-rounds {
+  width: 160px;
+}
+#roster-search {
+  width: 250px;
+}
+#p-rating {
+  width: 100px;
+}
+#p-age {
+  width: 80px;
+}
+#p-gender {
+  width: 110px;
+}
+
+/* ===== Pairings ===== */
+.board {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.board.done {
+  opacity: 0.6;
+}
+.round-label {
+  font-size: 16px;
+  color: #7f8c8d;
+  font-weight: normal;
+}
+
+/* ===== Roster ===== */
+#roster-box {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 8px 0;
+  background: #fafafa;
+}
+.roster-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 2px;
+  border-bottom: 1px solid #eee;
+}
+.roster-row:last-child {
+  border-bottom: none;
+}
+.roster-row label {
+  flex: 1;
+  cursor: pointer;
+}
+.roster-rating {
+  color: #7f8c8d;
+  font-size: 13px;
+}
+.roster-meta {
+  color: #95a5a6;
+  font-size: 12px;
+  min-width: 90px;
+}
+.roster-empty {
+  color: #999;
+  font-style: italic;
+  padding: 6px 2px;
+}
+
+/* ===== Inline editing / buttons ===== */
+.edit-input {
+  width: 70px;
+  padding: 3px 5px;
+}
+.edit-input.name-input {
+  width: 140px;
+}
+.edit-input.select-input {
+  width: 90px;
+}
+.small-btn {
+  padding: 3px 7px;
+  font-size: 12px;
+  margin: 0 2px 0 0;
+}
+.danger-btn {
+  background: #c0392b;
+}
+.danger-btn:hover {
+  background: #922b21;
+}
+
+/* ===== Awards ===== */
+.awards-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+.award-card {
+  flex: 1;
+  min-width: 180px;
+  background: #fdf6e3;
+  border: 1px solid #f0e2b6;
+  border-radius: 8px;
+  padding: 12px;
+}
+.award-card h4 {
+  margin: 0 0 6px;
+  color: #b8860b;
+}
+.award-card .award-name {
+  font-weight: bold;
+  color: #2c3e50;
+}
+.award-card .award-empty {
+  color: #999;
+  font-style: italic;
+}
+.award-note {
+  font-weight: normal;
+  font-size: 11px;
+}
+.champ-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.champ-list li {
+  padding: 4px 0;
+}
+
+.title {
+  text-align: center;
+}
