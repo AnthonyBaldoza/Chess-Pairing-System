@@ -211,3 +211,16 @@ th {
 .title {
   text-align: center;
 }
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.club-logo {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+}
